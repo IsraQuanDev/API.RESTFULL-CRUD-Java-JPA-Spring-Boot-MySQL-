@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
+@Table(name = "persona")
 public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,7 +17,7 @@ public class Persona {
     @Setter
     private String nombre;
 
-    @Column(name="tel")
+    @Column(name="telefono")
     @Getter
     @Setter
     private String telefono;
